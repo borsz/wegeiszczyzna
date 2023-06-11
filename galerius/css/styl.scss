@@ -1,0 +1,381 @@
+$zielen_one: #37AE0F;
+$zielen_two: #62d340;
+$zielen_three: #002f06;
+$zielen_four: #001f04;
+
+$neon: #82ad85;
+
+$grafit: #151716;
+$papiez: whitesmoke;
+
+#naglowek {
+    font-family: 'Amatic SC', cursive; 
+}
+
+#naglo{
+    background-color: $zielen_two;
+}
+
+@keyframes animacja{
+    0% {color:rgba(245, 245, 245, 0);}
+    5% {color:rgba(245, 245, 245, 0.05);}
+    10% {color:rgba(245, 245, 245, 0.10);}
+    15% {color:rgba(245, 245, 245, 0.15);}
+    20% {color:rgba(245, 245, 245, 0.20);}
+    25% {color:rgba(245, 245, 245, 0.25);}
+    30% {color:rgba(245, 245, 245, 0.30);}
+    35% {color:rgba(245, 245, 245, 0.35);}
+    40% {color:rgba(245, 245, 245, 0.40);}
+    45% {color:rgba(245, 245, 245, 0.45);}
+    50% {color:rgba(245, 245, 245, 0.50);}
+    55% {color:rgba(245, 245, 245, 0.55);}
+    60% {color:rgba(245, 245, 245, 0.60);}
+    65% {color:rgba(245, 245, 245, 0.65);}
+    70% {color:rgba(245, 245, 245, 0.70);}
+    75% {color:rgba(245, 245, 245, 0.75);}
+    80% {color:rgba(245, 245, 245, 0.80);}
+    85% {color:rgba(245, 245, 245, 0.85);}
+    90% {color:rgba(245, 245, 245, 0.90);}
+    95% {color:rgba(245, 245, 245, 0.95);}
+    100% {color:rgba(245, 245, 245, 1);}
+
+}
+
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+@keyframes test {
+    0% {color:rgba(245, 245, 245, 0);}
+    50% {color:rgb(42, 218, 50);}
+    100% {color:rgb(235, 18, 18);}
+}
+
+
+* {
+    margin: 0 auto;
+    user-select: none; 
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    box-shadow: 0px 6px 20px -2px rgba(66, 68, 90, 1);  
+    position:relative;  
+   
+}
+
+#linki {
+    
+    text-decoration: none;
+    color: $papiez;
+    
+}
+
+.blok_lewy{
+    
+    width: 40vw;
+    height: 15vh;
+    background-color: $zielen_two;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.loga {
+    display: flex;
+    flex-direction: row;
+}
+
+.loga img{
+    height: 15vh;
+    width: 15vw;
+}
+
+.loga h1{
+    height: 15vh;
+    width: 35vw;
+    line-height: 15vh;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: $papiez;
+}
+
+
+
+.el_drei{
+    text-decoration: none;
+    
+}
+
+.as {
+    margin-top: 1.2em;
+}
+
+.el_eins, .el_zwei, .el_drei{
+    
+    display: flex;
+    justify-items: flex-end;
+
+    height: 15vh;
+    background-color: $zielen_two;
+    display: flex;
+    flex-direction: row;
+    margin-left: 7em;
+    justify-content: center;
+    font-family: 'Poppins', cursive;
+    color:$papiez;
+    transition: 0.4s;
+   
+    :hover {
+        color: $grafit;
+        background-color: $zielen_one;
+        transition: 0.4s;
+        transform: (rotate(-360deg));
+        
+
+    }
+}
+
+.sticky {
+    position: fixed;
+  }
+
+main {
+    height: 60em;
+    width: 100vw;
+    background-image: url("grafika/czarny.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    line-height: 60em;
+    
+    
+}
+
+.tytul{
+    padding-top: 25vh;
+    font-size: 10em;
+    font-family: 'Amatic SC', cursive;
+    color: $papiez;
+    animation-name: animacja;
+    animation-duration: 2s;
+    
+}
+
+
+.podtytul{
+    font-family: 'Amatic SC', cursive;
+    color: $papiez;
+    animation-name: animacja;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+
+.tytuldwa{
+    padding-top: 25vh;
+    font-size: 10em;
+    font-family: 'Amatic SC', cursive;
+    color: $papiez;
+    animation-name: animacja;
+    animation-duration: 0.5s;
+    display: flex;
+    
+}
+
+.podtytuldwa {
+    font-family: 'Amatic SC', cursive;
+    color: $papiez;
+    margin-bottom: 1em;
+    animation-name: animacja;
+    animation-delay: 0.25s;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    display: flex;
+   
+    
+    
+
+}
+
+#wprowadz {
+    height:70%;
+    width: 5vw;
+    justify-content: center;
+    
+}
+
+.linia {
+    border-top: 2px wheat solid;
+    width: 5%;
+    transition: 0.2s;
+
+    :hover{
+        width: 10%;
+        transition: 0.2s;
+    }
+    
+}
+
+.strawa_jeden, .strawa_dwa, .strawa_trzy {
+    line-height: 2em;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tekst_jeden, .tekst_dwa, .tekst_trzy {
+    padding-top: 10vh;
+    width: 20vw;
+    
+}
+
+.listy {
+    display: flex;
+        flex-direction: column;
+    list-style-position: inside;
+}
+
+.danie_jeden {
+ padding-top: 15vh;
+ padding-left: 8vw;
+    .tresc_jeden{
+        display: flex;
+        justify-items: flex-end;
+        
+    }
+}
+
+.danie_dwa {
+    padding-top: 15vh;
+    padding-left: 8vw;
+    .tresc_dwa{
+        display: flex;
+        justify-items: flex-end;
+    }
+}
+
+.danie_trzy {
+    padding-top: 15vh;
+    padding-left: 8vw;
+    display: flex;
+    justify-items: flex-end;
+    .tresc_trzy{
+        display: flex;
+        justify-items: flex-end;
+        
+    }
+}
+
+.jedzonko {
+    box-shadow: 1px 1px 24px -2px $neon;
+}
+
+aside{
+    text-align: center;
+    clear: both;
+    width: 100vw;
+    height: 312vh;
+    background-color: $zielen_three;
+    color: $papiez;
+    font-family: 'Poppins', cursive;
+    
+    
+    .lista {
+        display: flex;
+        justify-items: flex-start;
+        line-height: 4em;
+        padding-top: 3em;
+        padding-left: 7em;
+    }
+    
+}
+
+.in{
+    padding-top: 22em;
+    display: flex;
+    justify-items: flex-start;
+    display: block
+
+}
+
+
+
+.tam_gdzie_aside{
+    background-color: rgb(212, 212, 212);
+    background-repeat: none;
+    background-size: cover;
+    width: 100vw;
+    height: 118rem;
+    border-radius: 7px;
+    
+}
+
+a:link, a:visited{
+    text-decoration: none!important;
+    color: $papiez;
+}
+
+.wyswietl {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2rem;
+    
+    src{
+        width: 75%;
+        height: 75%;
+    }
+}
+
+
+
+
+
+.galeria {
+    height: 60em;
+    width: 100vw;
+    background-image: url("grafika/czarny.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+
+footer {
+    height: 25vh;
+    width: 100vw;
+    background-color: $zielen_four;
+    color: $papiez;
+    padding: 2em;
+    line-height: 1.5em;
+    clear: both;
+    #in{
+        display: flex;
+        justify-items: flex-end;
+    }
+}
+
+

@@ -1,0 +1,375 @@
+#naglowek {
+  font-family: "Amatic SC", cursive;
+}
+
+#naglo {
+  background-color: #62d340;
+}
+
+@keyframes animacja {
+  0% {
+    color: rgba(245, 245, 245, 0);
+  }
+  5% {
+    color: rgba(245, 245, 245, 0.05);
+  }
+  10% {
+    color: rgba(245, 245, 245, 0.1);
+  }
+  15% {
+    color: rgba(245, 245, 245, 0.15);
+  }
+  20% {
+    color: rgba(245, 245, 245, 0.2);
+  }
+  25% {
+    color: rgba(245, 245, 245, 0.25);
+  }
+  30% {
+    color: rgba(245, 245, 245, 0.3);
+  }
+  35% {
+    color: rgba(245, 245, 245, 0.35);
+  }
+  40% {
+    color: rgba(245, 245, 245, 0.4);
+  }
+  45% {
+    color: rgba(245, 245, 245, 0.45);
+  }
+  50% {
+    color: rgba(245, 245, 245, 0.5);
+  }
+  55% {
+    color: rgba(245, 245, 245, 0.55);
+  }
+  60% {
+    color: rgba(245, 245, 245, 0.6);
+  }
+  65% {
+    color: rgba(245, 245, 245, 0.65);
+  }
+  70% {
+    color: rgba(245, 245, 245, 0.7);
+  }
+  75% {
+    color: rgba(245, 245, 245, 0.75);
+  }
+  80% {
+    color: rgba(245, 245, 245, 0.8);
+  }
+  85% {
+    color: rgba(245, 245, 245, 0.85);
+  }
+  90% {
+    color: rgba(245, 245, 245, 0.9);
+  }
+  95% {
+    color: rgba(245, 245, 245, 0.95);
+  }
+  100% {
+    color: rgb(245, 245, 245);
+  }
+}
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+@keyframes test {
+  0% {
+    color: rgba(245, 245, 245, 0);
+  }
+  50% {
+    color: rgb(42, 218, 50);
+  }
+  100% {
+    color: rgb(235, 18, 18);
+  }
+}
+* {
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 15vh;
+  box-shadow: 0px 6px 20px -2px rgb(66, 68, 90);
+  position: relative;
+}
+
+#linki {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.blok_lewy {
+  width: 40vw;
+  height: 15vh;
+  background-color: #62d340;
+  display: flex;
+  justify-self: flex-start;
+}
+
+.loga {
+  display: flex;
+  flex-direction: row;
+}
+
+.loga img {
+  height: 15vh;
+  width: 15vw;
+}
+
+.loga h1 {
+  height: 15vh;
+  width: 35vw;
+  line-height: 15vh;
+  padding-left: 0;
+  padding-top: 0;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  color: whitesmoke;
+}
+
+.el_drei {
+  text-decoration: none;
+}
+
+.as {
+  margin-top: 1.2em;
+}
+
+.el_eins, .el_zwei, .el_drei {
+  display: flex;
+  justify-items: flex-end;
+  height: 15vh;
+  background-color: #62d340;
+  display: flex;
+  flex-direction: row;
+  margin-left: 7em;
+  justify-content: center;
+  font-family: "Poppins", cursive;
+  color: whitesmoke;
+  transition: 0.4s;
+}
+.el_eins :hover, .el_zwei :hover, .el_drei :hover {
+  color: #151716;
+  background-color: #37AE0F;
+  transition: 0.4s;
+  transform: rotate(-360deg);
+}
+
+.sticky {
+  position: fixed;
+}
+
+main {
+  height: 60em;
+  width: 100vw;
+  background-image: url("grafika/czarny.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 60em;
+}
+
+.tytul {
+  padding-top: 25vh;
+  font-size: 10em;
+  font-family: "Amatic SC", cursive;
+  color: whitesmoke;
+  animation-name: animacja;
+  animation-duration: 2s;
+}
+
+.podtytul {
+  font-family: "Amatic SC", cursive;
+  color: whitesmoke;
+  animation-name: animacja;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.tytuldwa {
+  padding-top: 25vh;
+  font-size: 10em;
+  font-family: "Amatic SC", cursive;
+  color: whitesmoke;
+  animation-name: animacja;
+  animation-duration: 0.5s;
+  display: flex;
+}
+
+.podtytuldwa {
+  font-family: "Amatic SC", cursive;
+  color: whitesmoke;
+  margin-bottom: 1em;
+  animation-name: animacja;
+  animation-delay: 0.25s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  display: flex;
+}
+
+#wprowadz {
+  height: 70%;
+  width: 5vw;
+  justify-content: center;
+}
+
+.linia {
+  border-top: 2px wheat solid;
+  width: 5%;
+  transition: 0.2s;
+}
+.linia :hover {
+  width: 10%;
+  transition: 0.2s;
+}
+
+.strawa_jeden, .strawa_dwa, .strawa_trzy {
+  line-height: 2em;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.tekst_jeden, .tekst_dwa, .tekst_trzy {
+  padding-top: 10vh;
+  width: 20vw;
+}
+
+.listy {
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+}
+
+.danie_jeden {
+  padding-top: 15vh;
+  padding-left: 8vw;
+}
+.danie_jeden .tresc_jeden {
+  display: flex;
+  justify-items: flex-end;
+}
+
+.danie_dwa {
+  padding-top: 15vh;
+  padding-left: 8vw;
+}
+.danie_dwa .tresc_dwa {
+  display: flex;
+  justify-items: flex-end;
+}
+
+.danie_trzy {
+  padding-top: 15vh;
+  padding-left: 8vw;
+  display: flex;
+  justify-items: flex-end;
+}
+.danie_trzy .tresc_trzy {
+  display: flex;
+  justify-items: flex-end;
+}
+
+.jedzonko {
+  box-shadow: 1px 1px 24px -2px #82ad85;
+}
+
+aside {
+  text-align: center;
+  clear: both;
+  width: 100vw;
+  height: 312vh;
+  background-color: #002f06;
+  color: whitesmoke;
+  font-family: "Poppins", cursive;
+}
+aside .lista {
+  display: flex;
+  justify-items: flex-start;
+  line-height: 4em;
+  padding-top: 3em;
+  padding-left: 7em;
+}
+
+.in {
+  padding-top: 22em;
+  display: flex;
+  justify-items: flex-start;
+  display: block;
+}
+
+.tam_gdzie_aside {
+  background-color: rgb(212, 212, 212);
+  background-repeat: none;
+  background-size: cover;
+  width: 100vw;
+  height: 118rem;
+  border-radius: 7px;
+}
+
+a:link, a:visited {
+  text-decoration: none !important;
+  color: whitesmoke;
+}
+
+.wyswietl {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.wyswietl src {
+  width: 75%;
+  height: 75%;
+}
+
+.galeria {
+  height: 60em;
+  width: 100vw;
+  background-image: url("grafika/czarny.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  height: 25vh;
+  width: 100vw;
+  background-color: #001f04;
+  color: whitesmoke;
+  padding: 2em;
+  line-height: 1.5em;
+  clear: both;
+}
+footer #in {
+  display: flex;
+  justify-items: flex-end;
+}/*# sourceMappingURL=styl.css.map */
